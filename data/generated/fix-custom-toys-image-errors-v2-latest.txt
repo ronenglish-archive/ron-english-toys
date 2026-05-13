@@ -1,0 +1,38 @@
+﻿Fix Custom Toys image errors v2
+Generated: 05/13/2026 16:35:09
+Repo root: D:\github\ron-english-toys
+
+Custom Toys HTML files scanned:
+  toys\custom-toys\big-poppa\index.html
+  toys\custom-toys\doh-boy\index.html
+  toys\custom-toys\heart-brain\index.html
+  toys\custom-toys\heart-skull\index.html
+  toys\custom-toys\index.html
+  toys\custom-toys\little-bigfoot\index.html
+  toys\custom-toys\modzilla\index.html
+  toys\custom-toys\mona-grin\index.html
+  toys\custom-toys\ronnnie-rabbbit\index.html
+  toys\custom-toys\urban-bigfoot\index.html
+
+Target: Giant Ted 2
+  Item page: NOT FOUND OR AMBIGUOUS
+  Candidates:
+    
+
+Target: Giant Scratch 2
+  Item page: NOT FOUND OR AMBIGUOUS
+  Candidates:
+    
+
+Remove from Custom Toys: liberty-grin-48-942.html
+  No Custom Toys link/card found.
+
+Changed files:
+  None
+
+Backup folder:
+  D:\github-backups\ron-english-toys\fix-custom-toys-image-errors-v2-20260513-163509
+
+No filenames were changed.
+No source images were moved or deleted.
+No commit or push was performed.

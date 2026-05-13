@@ -1,0 +1,22 @@
+Fix Hulkboy sculpture formatting
+Generated: 05/13/2026 17:28:08
+Repo root: D:\github\ron-english-toys
+Target file: items\the-incredulous-hulkboy-655.html
+Backup folder: D:\github-backups\ron-english-toys\fix-hulkboy-sculpture-format-v1-20260513-172808
+
+Backup created:
+  D:\github-backups\ron-english-toys\fix-hulkboy-sculpture-format-v1-20260513-172808\items\the-incredulous-hulkboy-655.html
+
+OK: Changed eyebrow from Art toy / edition to Sculpture.
+OK: Changed Object type from Art toy / edition to Editioned sculpture.
+OK: Made Sculptures the active top navigation pill.
+OK: Removed active state from Art Toys & Editions top navigation pill.
+OK: Removed incorrect Back to Art Toys & Editions pill.
+OK: Left-aligned bottom Back to Sculptures pill.
+
+Changed files:
+  items\the-incredulous-hulkboy-655.html
+
+No filenames were changed.
+No images were moved or deleted.
+No commit or push was performed.

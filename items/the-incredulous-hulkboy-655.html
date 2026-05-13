@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -148,17 +148,152 @@
     }
 
     .back-link a:hover { background: #f9fafb; }
-  </style></head>
+  </style>
+
+  <style>
+    /*
+      Page-specific documentation styling for The Incredulous Hulkboy.
+      This keeps the evidence card closer to the catalogue-page model:
+      centered headings, centered intro text, and a narrower documentation card.
+    */
+
+    .section-block h2 {
+      text-align: center;
+    }
+
+    .section-block > p {
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .ancillary-gallery.documentation-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: start;
+      width: min(100%, 760px);
+      max-width: 760px;
+      margin: 0.85rem auto 0;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      display: grid;
+      grid-template-columns: minmax(130px, 190px) 1fr;
+      align-items: center;
+      margin: 0;
+      border: 1px solid rgba(20, 20, 20, 0.12);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.96);
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 130px;
+      padding: 0.75rem;
+      text-decoration: none;
+      border-right: 1px solid rgba(20, 20, 20, 0.08);
+      background: rgba(0, 0, 0, 0.025);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      display: block;
+      width: 100%;
+      max-width: 165px;
+      max-height: 130px;
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
+      display: block;
+      margin: 0;
+      padding: 0.9rem 1rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.98);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption a {
+      display: inline;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    .card-title {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .card-detail-text {
+      display: block;
+      margin-top: 0.35rem;
+    }
+
+    .card-source {
+      display: block;
+      margin-top: 0.55rem;
+      font-size: 0.86rem;
+      opacity: 0.86;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 820px) {
+      .ancillary-gallery.documentation-grid {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure > a {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(20, 20, 20, 0.08);
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure img {
+        max-width: 230px;
+        max-height: 170px;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
+        text-align: left;
+      }
+    }
+  </style>
+
+  <style>
+    .bottom-back-nav {
+      justify-content: flex-start;
+      max-width: 760px;
+      margin: 2rem auto 0;
+      text-align: left;
+    }
+  </style>
+</head>
 <body>
   <header class="site-header">
-    <p class="eyebrow">Art toy / edition</p>
+    <p class="eyebrow">Sculpture</p>
     <h1>The Incredulous Hulkboy</h1>
 
     <nav class="top-nav" aria-label="Site navigation">
       <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Section home</a>
-      <a class="nav-pill" href="../sculptures/index.html">Sculptures</a>
-      <a class="nav-pill is-active" href="../toys/art-toys-and-editions/index.html">Art Toys &amp; Editions</a>
+      <a class="nav-pill is-active" href="../sculptures/index.html">Sculptures</a>
+      <a class="nav-pill" href="../toys/art-toys-and-editions/index.html">Art Toys &amp; Editions</a>
       <a class="nav-pill" href="../toys/custom-toys/index.html">Custom Toys</a>
     </nav>
   </header>
@@ -172,15 +307,55 @@
 
     <ul class="work-meta">
       <li><strong>Title:</strong> The Incredulous Hulkboy</li>
-      <li><strong>Object type:</strong> Art toy / edition</li>
+      <li><strong>Object type:</strong> Editioned sculpture</li>
       <li><strong>Artist / creator:</strong> Ron English</li>
       <li><strong>Manufacturer / maker:</strong> Garageworks Industries</li>
       <li><strong>Platform:</strong> Temper Tot</li>
       <li><strong>Height:</strong> 22.00&quot;</li>
       <li><strong>Edition:</strong> 10</li>
     </ul>
+<section class="section-block">
+      <h2>Ancillary Documentation</h2>
 
-    <p class="back-link"><a href="../toys/art-toys-and-editions/index.html">Back to Art Toys &amp; Editions</a></p>
+      <p>
+        The following material documents external source information and related online documentation for this entry.
+      </p>
+
+      <div class="ancillary-gallery documentation-grid">
+        <figure class="ancillary-figure">
+          <a
+            href="../images/Web-Documentation/temper-lifesize-toyartgallery.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../images/Web-Documentation/temper-lifesize-toyartgallery.jpg"
+              alt="Toy Art Gallery screenshot documenting Temper Tot Lifesize by Ron English"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Toy Art Gallery listing documentation.</span>
+            <span class="card-detail-text">
+              Archival screenshot from Toy Art Gallery's listing for <em>Temper Tot Lifesize by Ron English</em>, documenting the large-scale fiberglass edition associated with this entry.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://www.toyartgallery.com/temper-tot-lifesize-by-ron-english.html" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed May 13, 2026.
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <nav class="top-nav bottom-back-nav">
+      <a class="nav-pill year-return-pill" href="../sculptures/index.html">Back to Sculptures</a>
+    </nav>
   </main>
 </body>
 </html>
+
+
+
+

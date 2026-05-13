@@ -1,0 +1,63 @@
+﻿Exact Ted/Scratch image fix v2
+Generated: 05/13/2026 17:04:06
+Repo root: D:\github\ron-english-toys
+Backup folder: D:\github-backups\ron-english-toys\fix-ted-scratch-exact-v2-20260513-170406
+
+Giant Ted 2:
+  Expected item page: items\ron-english-giant-ted-2-530.html
+  Expected image: images\Trampt\RON ENGLISH GIANT TED 2 - Custom Toy - Trampt item 530.jpg
+  Exact image found.
+
+Giant Scratch 2:
+  Expected item page: items\ron-english-giant-scratch-2-268.html
+  Expected image: images\Trampt\RON ENGLISH GIANT SCRATCH 2 - Custom Toy - Trampt item 268.jpg
+  Exact image found.
+
+Sculptures index: Giant Ted 2
+  Updated card image for href: ../items/ron-english-giant-ted-2-530.html
+  New src: ../images/Trampt/RON ENGLISH GIANT TED 2 - Custom Toy - Trampt item 530.jpg
+
+Sculptures index: Giant Scratch 2
+  Updated card image for href: ../items/ron-english-giant-scratch-2-268.html
+  New src: ../images/Trampt/RON ENGLISH GIANT SCRATCH 2 - Custom Toy - Trampt item 268.jpg
+
+Item page: Giant Ted 2
+  MISSING: D:\github\ron-english-toys\items\ron-english-giant-ted-2-530.html
+  Similar item pages found:
+    D:\github\ron-english-toys\items\cereal-killers-sugar-frosted-fat-873.html
+    D:\github\ron-english-toys\items\dinogrenade-hand-painted-717.html
+    D:\github\ron-english-toys\items\dinogrenade-unpainted-blue-178.html
+    D:\github\ron-english-toys\items\frosted-fat-tony-mini-98.html
+    D:\github\ron-english-toys\items\hand-painted-modzilla-358.html
+    D:\github\ron-english-toys\items\hand-painted-modzilla-521.html
+    D:\github\ron-english-toys\items\mc-supersized-clear-molding-unpainted-ttf-2009-633.html
+    D:\github\ron-english-toys\items\modzilla-unpainted-green-189.html
+    D:\github\ron-english-toys\items\pink-painted-deadmau5-grin-628.html
+    D:\github\ron-english-toys\items\poultry-rex-unpainted-pink-321.html
+    D:\github\ron-english-toys\items\poultry-rex-unpainted-purple-dcon-16-805.html
+    D:\github\ron-english-toys\items\poultry-rex-unpainted-yellow-215.html
+    D:\github\ron-english-toys\items\rollie-green-un1ted-edition-platinum-mogul-grin-748.html
+    D:\github\ron-english-toys\items\teddy-bear-grin-drawing-695.html
+    D:\github\ron-english-toys\items\telegrinnies-pink-jps-edition-special-unpainted-104.html
+    D:\github\ron-english-toys\items\the-chase-temper-tot-dinogrenade-limited-edition-of-30-94.html
+    D:\github\ron-english-toys\items\un1ted-edition-platinum-mogul-grin-833.html
+    D:\github\ron-english-toys\items\unpainted-blue-deadmau5-grin-898.html
+    D:\github\ron-english-toys\items\unpainted-green-deadmau5-grin-265.html
+    D:\github\ron-english-toys\items\unpainted-orange-deadmau5-grin-822.html
+    D:\github\ron-english-toys\items\unpainted-pink-deadmau5-grin-991.html
+    D:\github\ron-english-toys\items\unpainted-red-deadmau5-grin-397.html
+    D:\github\ron-english-toys\items\unpainted-white-deadmau5-grin-115.html
+    D:\github\ron-english-toys\items\unpainted-yellow-deadmau5-grin-750.html
+    D:\github\ron-english-toys\items\x-ray-mc-supersized-limited-mindstyle-color-thailand-toy-expo-2015-exclusive-848.html
+
+Item page: Giant Scratch 2
+  MISSING: D:\github\ron-english-toys\items\ron-english-giant-scratch-2-268.html
+  Similar item pages found:
+    D:\github\ron-english-toys\items\ron-english-x-dudebox-giant-scratch.html
+
+Changed files:
+  sculptures\index.html
+
+No filenames were changed.
+No images were moved or deleted.
+No commit or push was performed.
