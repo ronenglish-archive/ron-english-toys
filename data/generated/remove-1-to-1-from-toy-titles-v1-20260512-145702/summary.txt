@@ -1,0 +1,8 @@
+﻿Ron English toys cleanup: remove 1:1 title prefix and Ratio rows
+Generated: 05/12/2026 14:57:04
+Repository: D:\github\ron-english-toys
+Backup folder: D:\github-backups\ron-english-toys\remove-1-to-1-from-toy-titles-v1-20260512-145702
+Report folder: D:\github\ron-english-toys\data\generated\remove-1-to-1-from-toy-titles-v1-20260512-145702
+HTML files scanned: 1106
+HTML files changed: 65
+Report CSV: D:\github\ron-english-toys\data\generated\remove-1-to-1-from-toy-titles-v1-20260512-145702\changed-files.csv

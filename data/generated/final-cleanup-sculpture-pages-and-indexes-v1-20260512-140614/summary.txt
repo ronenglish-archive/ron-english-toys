@@ -1,0 +1,8 @@
+﻿Final sculpture cleanup completed.
+Repo: D:\github\ron-english-toys
+Backup: D:\github-backups\ron-english-toys\final-cleanup-sculpture-pages-and-indexes-v1-20260512-140614
+Report folder: D:\github\ron-english-toys\data\generated\final-cleanup-sculpture-pages-and-indexes-v1-20260512-140614
+Index pages changed: 2
+Item pages scanned: 40
+Item pages changed: 40
+Missing linked item/index files: 0

@@ -1,0 +1,7 @@
+﻿Money comma-format cleanup complete.
+Repo: D:\github\ron-english-toys
+Backup: D:\github-backups\ron-english-toys\format-money-values-with-commas-v1-20260512-150013
+Report folder: D:\github\ron-english-toys\data\generated\format-money-values-with-commas-v1-20260512-150013
+HTML files checked: 1106
+HTML files changed: 79
+Report: D:\github\ron-english-toys\data\generated\format-money-values-with-commas-v1-20260512-150013\changed-files.csv

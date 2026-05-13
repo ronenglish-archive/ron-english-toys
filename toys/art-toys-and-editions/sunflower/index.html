@@ -1,0 +1,420 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunflower | Ron English Catalogue Raisonne</title>
+  <link rel="stylesheet" href="../../../css/styles.css" />
+
+  <style>
+    :root{
+      --muted:#4b5563;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:#fff;
+    }
+
+    .page-container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+      box-sizing:border-box;
+    }
+
+    .top-nav{
+      margin-top:22px;
+      margin-bottom:22px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0;
+      padding:0;
+      text-align:center;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+      text-align:center;
+    }
+
+    .intro-text{
+      max-width:900px;
+      margin:0 auto 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:none;
+      width:100%;
+      color:var(--muted);
+      font-size:18px;
+      text-align:center;
+    }
+
+    .catalogue-search{
+      max-width:640px;
+      margin:0 auto 24px;
+      text-align:center;
+    }
+
+    .catalogue-search label{
+      display:block;
+      margin:0 0 8px;
+      font-size:.9rem;
+      color:var(--muted);
+    }
+
+    .catalogue-search input{
+      width:100%;
+      min-height:46px;
+      border:1px solid rgba(0,0,0,0.14);
+      border-radius:999px;
+      padding:0 18px;
+      font-size:1rem;
+      text-align:center;
+      background:#fff;
+      color:#111;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .year-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:18px;
+      justify-items:center;
+      align-items:stretch;
+      margin-top:26px;
+    }
+
+    .year-card{
+      display:flex;
+      flex-direction:column;
+      width:100%;
+      max-width:260px;
+      text-decoration:none;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.12);
+      background:rgba(255,255,255,0.98);
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      transition:transform 120ms ease, box-shadow 120ms ease;
+      color:inherit;
+    }
+
+    .year-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 26px rgba(0,0,0,0.12);
+    }
+
+    .year-card img{
+      display:block;
+      width:100%;
+      height:230px;
+      object-fit:contain;
+      background:#f3f4f6;
+      padding:8px;
+    }
+
+    .year-card-body{
+      padding:12px 14px 14px;
+      text-align:center;
+    }
+
+    .year-grid .year-card .year-card-title{
+      display:block;
+      width:100%;
+      text-align:center !important;
+      margin:0 auto;
+      font-size:1.05rem;
+      line-height:1.2;
+    }
+
+    .site-footer{
+      margin-top:42px;
+      text-align:center;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+  /* BEGIN TOY INDEX CLEANUP OVERRIDES */
+/* BEGIN TOY INDEX CLEANUP OVERRIDES */
+.site-header,
+.page-header {
+  text-align: center;
+}
+
+.top-nav,
+.nav-pills {
+  justify-content: center;
+  text-align: center;
+}
+
+.page-title,
+.site-header h1,
+.page-header h1 {
+  text-align: center;
+}
+
+.intro-text,
+.site-intro,
+.section-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-wrap,
+.search-panel,
+.filter-panel {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.gallery-grid,
+.item-grid,
+.year-grid {
+  justify-items: center;
+}
+
+.gallery-item .entry-body,
+.item-card .entry-body,
+.year-card-body,
+.card-body {
+  text-align: center;
+}
+
+.gallery-item .entry-body p,
+.item-card .entry-body p,
+.card-body p,
+.work-note,
+.work-subtitle,
+.item-meta,
+.card-meta {
+  display: none !important;
+}
+
+.work-title,
+.item-title,
+.card-title,
+.year-card-title,
+.gallery-item .entry-body h2,
+.gallery-item .entry-body h3,
+.item-card .entry-body h2,
+.item-card .entry-body h3 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center !important;
+}
+/* END TOY INDEX CLEANUP OVERRIDES */
+/* END TOY INDEX CLEANUP OVERRIDES */
+  </style>
+</head>
+
+<body class="decade-overview-page">
+  <div class="page-container">
+
+    <nav class="top-nav" aria-label="Site navigation">
+      <a class="nav-home nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <div class="nav-pills">
+        <a class="nav-pill" href="../../../index.html">Section home</a>
+        <a class="nav-pill" href="../../../sculptures/index.html">Sculptures</a>
+        <a class="nav-pill is-active" href="../../../toys/art-toys-and-editions/index.html">Art Toys &amp; Editions</a>
+        <a class="nav-pill" href="../../../toys/custom-toys/index.html">Custom Toys</a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Sunflower</h1>
+    </header>
+<main class="gallery-wrap">
+      <section class="year-grid" role="list" aria-label="Sunflower links grid">
+<a class="year-card searchable-card" href="../../../items/pot-of-gold-ganja-grin-the-compound-504.html" data-title="Ganja Grin Pot of Gold">
+          <img src="../../../images/Trampt/Pot%20of%20Gold%20Ganja%20Grin%20(The%20Compound)%20-%20DESIGNER%20TOY.jpeg" alt="Ganja Grin Pot of Gold by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Ganja Grin Pot of Gold</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/silver-kush-ganja-grin-the-compound-134.html" data-title="Ganja Grin Silver Kush">
+          <img src="../../../images/Trampt/Silver%20Kush%20Ganja%20Grin%20(The%20Compound)%20-%20DESIGNER%20TOY.jpeg" alt="Ganja Grin Silver Kush by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Ganja Grin Silver Kush</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/haze-bob-ganja-gin-the-compound-458.html" data-title="Ganja Grin Sunflower Haze Bob">
+          <img src="../../../images/Trampt/Haze%20Bob%20Ganja%20Gin%20(The%20Compound)%20-%20DESIGNER%20TOY.jpeg" alt="Ganja Grin Sunflower Haze Bob by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Ganja Grin Sunflower Haze Bob</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/grin-polka-dot-shocking-sunflower-727.html" data-title="Grin Polka Dot Shocking Sunflower">
+          <img src="../../../images/Trampt/Grin%20Polka%20Dot%20Shocking%20Sunflower%20-%20DESIGNER%20TOY-3.jpeg" alt="Grin Polka Dot Shocking Sunflower by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Grin Polka Dot Shocking Sunflower</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/growing-grin-sunflower-ron-english-191-57.html" data-title="Growing Grin Sunflower">
+          <img src="../../../images/Trampt/Growing%20Grin%20Sunflower%20Ron%20English%20%5B191%5D%20-%20DESIGNER%20TOY.jpeg" alt="Growing Grin Sunflower by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Growing Grin Sunflower</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/pink-shocking-sunflower-silver-grin-355.html" data-title="Pink Shocking Sunflower Silver Grin">
+          <img src="../../../images/Trampt/Pink%20Shocking%20Sunflower%20(Silver%20Grin)%20-%20DESIGNER%20TOY.jpeg" alt="Pink Shocking Sunflower Silver Grin by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Pink Shocking Sunflower Silver Grin</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/ronnnie-rabbbit-sunflower-ron-english-192-459.html" data-title="Ronnnie Rabbbit Sunflower">
+          <img src="../../../images/Trampt/Ronnnie%20Rabbbit%20Sunflower%20Ron%20English%20%5B192%5D%20-%20DESIGNER%20TOY.jpeg" alt="Ronnnie Rabbbit Sunflower by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Ronnnie Rabbbit Sunflower</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/shocking-sunflower-3-eyed-sponge-145.html" data-title="Shocking Sunflower 3-Eyed Spongebob">
+          <img src="../../../images/Trampt/Shocking%20Sunflower%20(3%20Eyed%20Sponge)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower 3-Eyed Spongebob by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower 3-Eyed Spongebob</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/black-shocking-sunflower-3-eyed-sponge-204.html" data-title="Shocking Sunflower Black 3-Eyed Spongebob">
+          <img src="../../../images/Trampt/Black%20Shocking%20Sunflower%20(3%20Eyed%20Sponge)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Black 3-Eyed Spongebob by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Black 3-Eyed Spongebob</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/black-shocking-sunflower-bone-grin-107.html" data-title="Shocking Sunflower Black with Bone Grin">
+          <img src="../../../images/Trampt/Black%20Shocking%20Sunflower%20(Bone%20Grin)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Black with Bone Grin by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Black with Bone Grin</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/black-shocking-sunflower-gold-grin-109.html" data-title="Shocking Sunflower Black with Gold Grin">
+          <img src="../../../images/Trampt/Black%20Shocking%20Sunflower%20(Gold%20Grin)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Black with Gold Grin by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Black with Gold Grin</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/blue-ice-shocking-sunflower-bone-grin-1027.html" data-title="Shocking Sunflower Blue Ice Bone Grin">
+          <img src="../../../images/Trampt/Blue%20Ice%20Shocking%20Sunflower%20(Ronnie)%20-%20DESIGNER%20TOY-3.jpeg" alt="Shocking Sunflower Blue Ice Bone Grin by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Blue Ice Bone Grin</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/blue-ice-shocking-sunflower-gold-grin-887.html" data-title="Shocking Sunflower Blue Ice Gold Grin">
+          <img src="../../../images/Trampt/Blue%20Ice%20Shocking%20Sunflower%20(Gold%20Grin)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Blue Ice Gold Grin by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Blue Ice Gold Grin</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/blue-ice-shocking-sunflower-ronnie-968.html" data-title="Shocking Sunflower Blue Ice Ronnie">
+          <img src="../../../images/Trampt/Blue%20Ice%20Shocking%20Sunflower%20(Ronnie)%20-%20DESIGNER%20TOY-3.jpeg" alt="Shocking Sunflower Blue Ice Ronnie by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Blue Ice Ronnie</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/charlie-grin-shocking-sunflower-bone-281.html" data-title="Shocking Sunflower Charlie Grin (Bone)">
+          <img src="../../../images/Trampt/Charlie%20Grin%20Shocking%20Sunflower%20(Bone)%20-%20DESIGNER%20TOY-2.jpeg" alt="Shocking Sunflower Charlie Grin (Bone) by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Charlie Grin (Bone)</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/charlie-grin-shocking-sunflower-silver-1.html" data-title="Shocking Sunflower Charlie Grin (Silver)">
+          <img src="../../../images/Trampt/Charlie%20Grin%20Shocking%20Sunflower%20(Silver)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Charlie Grin (Silver) by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Charlie Grin (Silver)</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/electric-strawberry-charlie-grin-sunflower-nft-1009.html" data-title="Shocking Sunflower Charlie Grin Electric Strawberry (+NFT)">
+          <img src="../../../images/Trampt/Electric%20Strawberry%20Charlie%20Grin%20Sunflower%20(%2BNFT)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Charlie Grin Electric Strawberry (+NFT) by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Charlie Grin Electric Strawberry (+NFT)</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/lightning-zest-charlie-grin-sunflower-nft-141.html" data-title="Shocking Sunflower Charlie Grin Lightning Zest (+NFT)">
+          <img src="../../../images/Trampt/Lightning%20Zest%20Charlie%20Grin%20Sunflower%20(%2BNFT)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Charlie Grin Lightning Zest (+NFT) by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Charlie Grin Lightning Zest (+NFT)</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/m-c-charlie-grin-768.html" data-title="Shocking Sunflower Charlie Grin MC">
+          <img src="../../../images/Trampt/MC%20Charlie%20Grin%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Charlie Grin MC by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Charlie Grin MC</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/gold-silver-shocking-sunflower-gold-grin-1011.html" data-title="Shocking Sunflower Gold &amp; Silver">
+          <img src="../../../images/Trampt/Gold%20%26%20Silver%20Shocking%20Sunflower%20(Gold%20Grin)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Gold &amp; Silver by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Gold &amp; Silver</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/gold-silver-shocking-sunflower-silver-grin-774.html" data-title="Shocking Sunflower Gold &amp; Silver">
+          <img src="../../../images/Trampt/Gold%20%26%20Silver%20Shocking%20Sunflower%20(Silver%20Grin)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Gold &amp; Silver by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Gold &amp; Silver</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/shocking-sunflower-grin-681.html" data-title="Shocking Sunflower Grin">
+          <img src="../../../images/Trampt/Shocking%20Sunflower%20(Grin)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Grin by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Grin</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/pink-shocking-sunflower-bone-grin-114.html" data-title="Shocking Sunflower Pink &amp; Bone">
+          <img src="../../../images/Trampt/Pink%20Shocking%20Sunflower%20(Bone%20Grin)%20-%20DESIGNER%20TOY-2.jpeg" alt="Shocking Sunflower Pink &amp; Bone by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Pink &amp; Bone</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/pink-shocking-sunflower-3-eyed-sponge-945.html" data-title="Shocking Sunflower Pink 3-Eyed Spongebob">
+          <img src="../../../images/Trampt/Pink%20Shocking%20Sunflower%20(3%20Eyed%20Sponge)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Pink 3-Eyed Spongebob by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Pink 3-Eyed Spongebob</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/pink-cheezy-shocking-sunflower-3-eyed-sponge-845.html" data-title="Shocking Sunflower Pink Cheezy 3-Eyed Spongebob">
+          <img src="../../../images/Trampt/Pink%20Cheezy%20Shocking%20Sunflower%20(3%20Eyed%20Sponge)%20-%20DESIGNER%20TOY-2.jpeg" alt="Shocking Sunflower Pink Cheezy 3-Eyed Spongebob by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Pink Cheezy 3-Eyed Spongebob</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/pink-shocking-sunflower-smile-353.html" data-title="Shocking Sunflower Pink Smile">
+          <img src="../../../images/Trampt/Pink%20Shocking%20Sunflower%20(Smile)%20-%20DESIGNER%20TOY-3.jpeg" alt="Shocking Sunflower Pink Smile by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Pink Smile</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/red-glitter-glow-shocking-sunflower-878.html" data-title="Shocking Sunflower -Red Glitter Glow">
+          <img src="../../../images/Trampt/Red%20Glitter%20Glow%20Shocking%20Sunflower%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower -Red Glitter Glow by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower -Red Glitter Glow</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/ronnnie-rabbbit-polka-dot-shocking-sunflower-1015.html" data-title="Shocking Sunflower Ronnnie Rabbbit Polka Dot">
+          <img src="../../../images/Trampt/Ronnnie%20Rabbbit%20Polka%20Dot%20Shocking%20Sunflower%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Ronnnie Rabbbit Polka Dot by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Ronnnie Rabbbit Polka Dot</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/shocking-sunflower-smiley-894.html" data-title="Shocking Sunflower Smiley">
+          <img src="../../../images/Trampt/Shocking%20Sunflower%20(Smiley)%20-%20DESIGNER%20TOY.jpeg" alt="Shocking Sunflower Smiley by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Shocking Sunflower Smiley</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/sunflower-grin-258.html" data-title="Sunflower Grin">
+          <img src="../../../images/Trampt/Sunflower%20Grin%20-%20DESIGNER%20TOY.jpeg" alt="Sunflower Grin by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Sunflower Grin</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/sunflower-grin-metallic-5.html" data-title="Sunflower Grin Metallic">
+          <img src="../../../images/Trampt/Sunflower%20Grin%20Metallic%20-%20DESIGNER%20TOY.jpeg" alt="Sunflower Grin Metallic by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Sunflower Grin Metallic</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/laa-laa-telegrinnies-sunflowers-8.html" data-title="Telegrinnie Sunflower Laa-Laa">
+          <img src="../../../images/Trampt/Laa-Laa%20Telegrinnies%20Sunflowers%20-%20DESIGNER%20TOY.jpeg" alt="Telegrinnie Sunflower Laa-Laa by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Telegrinnie Sunflower Laa-Laa</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/miami-blue-telegrinnies-sunflowers-672.html" data-title="Telegrinnie Sunflower Miami Blue">
+          <img src="../../../images/Trampt/Miami%20Blue%20Telegrinnies%20Sunflowers%20-%20DESIGNER%20TOY.jpeg" alt="Telegrinnie Sunflower Miami Blue by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Telegrinnie Sunflower Miami Blue</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/miami-pink-telegrinnies-sunflowers-663.html" data-title="Telegrinnie Sunflower Miami Pink">
+          <img src="../../../images/Trampt/Miami%20Pink%20Telegrinnies%20Sunflowers%20-%20DESIGNER%20TOY.jpeg" alt="Telegrinnie Sunflower Miami Pink by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Telegrinnie Sunflower Miami Pink</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/po-telegrinnies-sunflowers-765.html" data-title="Telegrinnie Sunflower Red">
+          <img src="../../../images/Trampt/Po%20Telegrinnies%20Sunflowers%20-%20DESIGNER%20TOY.jpeg" alt="Telegrinnie Sunflower Red by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Telegrinnie Sunflower Red</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/tinky-winky-telegrinnies-sunflowers-876.html" data-title="Telegrinnie Sunflower Tinky Winky">
+          <img src="../../../images/Trampt/Tinky%20Winky%20Telegrinnies%20Sunflowers%20-%20DESIGNER%20TOY.jpeg" alt="Telegrinnie Sunflower Tinky Winky by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Telegrinnie Sunflower Tinky Winky</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/dipsy-telegrinnies-sunflowers-3.html" data-title="Telegrinnie Sunflowers Dipsy">
+          <img src="../../../images/Trampt/Dipsy%20Telegrinnies%20Sunflowers%20-%20DESIGNER%20TOY.jpeg" alt="Telegrinnie Sunflowers Dipsy by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Telegrinnie Sunflowers Dipsy</h2></div>
+        </a>
+      </section>
+
+</main>
+
+    <footer class="site-footer">
+      <p>Ron English Catalogue Raisonne - Sculptures, Toys &amp; Editions</p>
+    </footer>
+
+  </div>
+</body>
+</html>
+
+
+

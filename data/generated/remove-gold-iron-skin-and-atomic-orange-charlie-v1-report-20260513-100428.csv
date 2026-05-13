@@ -1,0 +1,5 @@
+﻿"Action","Target","Status","Detail","BackupPath"
+"Remove index cards","toys/art-toys-and-editions/index.html","Updated","Removed 2 card(s): Gold Iron Skin Grin [gold-iron-skin-grin-551.html]; Atomic Orange Charlie Grin (+NFT) [48-atomic-orange-charlie-grin-nft-762.html]","D:\github-backups\ron-english-toys\remove-gold-iron-skin-and-atomic-orange-charlie-v1-20260513-100428\toys\art-toys-and-editions\index.html"
+"Remove index cards","toys/custom-toys/index.html","No change","No matching cards found.",""
+"Remove item page","items/gold-iron-skin-grin-551.html","Removed","HTML page removed after backup. Source images were not touched.","D:\github-backups\ron-english-toys\remove-gold-iron-skin-and-atomic-orange-charlie-v1-20260513-100428\items\gold-iron-skin-grin-551.html"
+"Remove item page","items/48-atomic-orange-charlie-grin-nft-762.html","Removed","HTML page removed after backup. Source images were not touched.","D:\github-backups\ron-english-toys\remove-gold-iron-skin-and-atomic-orange-charlie-v1-20260513-100428\items\48-atomic-orange-charlie-grin-nft-762.html"

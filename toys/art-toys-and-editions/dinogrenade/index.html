@@ -1,0 +1,292 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dinogrenade | Ron English Catalogue Raisonne</title>
+  <link rel="stylesheet" href="../../../css/styles.css" />
+
+  <style>
+    :root{
+      --muted:#4b5563;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:#fff;
+    }
+
+    .page-container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+      box-sizing:border-box;
+    }
+
+    .top-nav{
+      margin-top:22px;
+      margin-bottom:22px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0;
+      padding:0;
+      text-align:center;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+      text-align:center;
+    }
+
+    .intro-text{
+      max-width:900px;
+      margin:0 auto 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:none;
+      width:100%;
+      color:var(--muted);
+      font-size:18px;
+      text-align:center;
+    }
+
+    .catalogue-search{
+      max-width:640px;
+      margin:0 auto 24px;
+      text-align:center;
+    }
+
+    .catalogue-search label{
+      display:block;
+      margin:0 0 8px;
+      font-size:.9rem;
+      color:var(--muted);
+    }
+
+    .catalogue-search input{
+      width:100%;
+      min-height:46px;
+      border:1px solid rgba(0,0,0,0.14);
+      border-radius:999px;
+      padding:0 18px;
+      font-size:1rem;
+      text-align:center;
+      background:#fff;
+      color:#111;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .year-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:18px;
+      justify-items:center;
+      align-items:stretch;
+      margin-top:26px;
+    }
+
+    .year-card{
+      display:flex;
+      flex-direction:column;
+      width:100%;
+      max-width:260px;
+      text-decoration:none;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.12);
+      background:rgba(255,255,255,0.98);
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      transition:transform 120ms ease, box-shadow 120ms ease;
+      color:inherit;
+    }
+
+    .year-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 26px rgba(0,0,0,0.12);
+    }
+
+    .year-card img{
+      display:block;
+      width:100%;
+      height:230px;
+      object-fit:contain;
+      background:#f3f4f6;
+      padding:8px;
+    }
+
+    .year-card-body{
+      padding:12px 14px 14px;
+      text-align:center;
+    }
+
+    .year-grid .year-card .year-card-title{
+      display:block;
+      width:100%;
+      text-align:center !important;
+      margin:0 auto;
+      font-size:1.05rem;
+      line-height:1.2;
+    }
+
+    .site-footer{
+      margin-top:42px;
+      text-align:center;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+  /* BEGIN TOY INDEX CLEANUP OVERRIDES */
+/* BEGIN TOY INDEX CLEANUP OVERRIDES */
+.site-header,
+.page-header {
+  text-align: center;
+}
+
+.top-nav,
+.nav-pills {
+  justify-content: center;
+  text-align: center;
+}
+
+.page-title,
+.site-header h1,
+.page-header h1 {
+  text-align: center;
+}
+
+.intro-text,
+.site-intro,
+.section-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-wrap,
+.search-panel,
+.filter-panel {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.gallery-grid,
+.item-grid,
+.year-grid {
+  justify-items: center;
+}
+
+.gallery-item .entry-body,
+.item-card .entry-body,
+.year-card-body,
+.card-body {
+  text-align: center;
+}
+
+.gallery-item .entry-body p,
+.item-card .entry-body p,
+.card-body p,
+.work-note,
+.work-subtitle,
+.item-meta,
+.card-meta {
+  display: none !important;
+}
+
+.work-title,
+.item-title,
+.card-title,
+.year-card-title,
+.gallery-item .entry-body h2,
+.gallery-item .entry-body h3,
+.item-card .entry-body h2,
+.item-card .entry-body h3 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center !important;
+}
+/* END TOY INDEX CLEANUP OVERRIDES */
+/* END TOY INDEX CLEANUP OVERRIDES */
+  </style>
+</head>
+
+<body class="decade-overview-page">
+  <div class="page-container">
+
+    <nav class="top-nav" aria-label="Site navigation">
+      <a class="nav-home nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <div class="nav-pills">
+        <a class="nav-pill" href="../../../index.html">Section home</a>
+        <a class="nav-pill" href="../../../sculptures/index.html">Sculptures</a>
+        <a class="nav-pill is-active" href="../../../toys/art-toys-and-editions/index.html">Art Toys &amp; Editions</a>
+        <a class="nav-pill" href="../../../toys/custom-toys/index.html">Custom Toys</a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Dinogrenade</h1>
+    </header>
+<main class="gallery-wrap">
+      <section class="year-grid" role="list" aria-label="Dinogrenade links grid">
+<a class="year-card searchable-card" href="../../../items/dinogrenade-black-335.html" data-title="Dinogrenade Black">
+          <img src="../../../images/Trampt/Dinogrenade%20-%20Black.webp" alt="Dinogrenade Black by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Dinogrenade Black</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/dinogrenade-clear-glitter-green-1017.html" data-title="Dinogrenade Clear Glitter Green">
+          <img src="../../../images/Trampt/Dinogrenade%20-%20Clear%20Glitter%20Green%20-%20DESIGNER%20TOY.jpeg" alt="Dinogrenade Clear Glitter Green by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Dinogrenade Clear Glitter Green</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/dinogrenade-green-955.html" data-title="Dinogrenade Green">
+          <img src="../../../images/Trampt/Dinogrenade%20-%20Green%20-%20DESIGNER%20TOY.jpeg" alt="Dinogrenade Green by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Dinogrenade Green</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/dinogrenade-unpainted-blue-178.html" data-title="Dinogrenade Unpainted Blue">
+          <img src="../../../images/Trampt/Dinogrenade%20-%20Unpainted%20Blue%20-%20DESIGNER%20TOY-3.jpeg" alt="Dinogrenade Unpainted Blue by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Dinogrenade Unpainted Blue</h2></div>
+        </a>
+<a class="year-card searchable-card" href="../../../items/valentine-dinogrenade-pink-popaganda-exclusive-928.html" data-title="Valentine Dinogrenade Pink (POPaganda Exclusive)">
+          <img src="../../../images/Trampt/Valentine%20Dinogrenade%20(Pink%20POPaganda%20Exclusive)%20-%20DESIGNER%20TOY-2.jpeg" alt="Valentine Dinogrenade Pink (POPaganda Exclusive) by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Valentine Dinogrenade Pink (POPaganda Exclusive)</h2></div>
+        </a>
+      </section>
+
+</main>
+
+    <footer class="site-footer">
+      <p>Ron English Catalogue Raisonne - Sculptures, Toys &amp; Editions</p>
+    </footer>
+
+  </div>
+</body>
+</html>
+
+
+

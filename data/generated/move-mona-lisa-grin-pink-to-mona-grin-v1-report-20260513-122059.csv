@@ -1,0 +1,4 @@
+﻿"Action","Target","Status","Detail","BackupPath"
+"Find target card","toys/custom-toys/index.html","Found","Found Mona Lisa Grin - Pink at ../../items/pink-mona-lisa-grin-711.html",""
+"Update HTML","toys/custom-toys/mona-grin/index.html","Updated","Added/kept Mona Lisa Grin - Pink in Mona Grin.","D:\github-backups\ron-english-toys\move-mona-lisa-grin-pink-to-mona-grin-v1-20260513-122059\toys\custom-toys\mona-grin\index.html"
+"Update HTML","toys/custom-toys/index.html","Updated","Removed Mona Lisa Grin - Pink from wrong Custom Toys page.","D:\github-backups\ron-english-toys\move-mona-lisa-grin-pink-to-mona-grin-v1-20260513-122059\toys\custom-toys\index.html"

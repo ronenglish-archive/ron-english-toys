@@ -1,0 +1,476 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marilyn Mickeys (Green) - Ron English Catalogue Raisonné</title>
+<link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    body {
+      background: #fff;
+      color: #111;
+    }
+
+    .site-header {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .site-header h1 {
+      text-align: center;
+    }
+
+    .top-nav {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .work-layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 18px 60px;
+    }
+
+    .hero-card,
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      margin: 0;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .hero-card {
+      width: min(760px, 100%);
+      margin: 0 auto 1.5rem;
+      padding: 0.95rem;
+    }
+
+    .hero-card img,
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .hero-card .work-hero {
+      margin: 0 auto;
+      max-height: 760px;
+      object-fit: contain;
+    }
+
+    .work-meta,
+    ul.work-meta {
+      list-style: none !important;
+      width: min(760px, 100%);
+      margin: 0 auto 1.5rem;
+      padding: 1.15rem 1.35rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+
+    .work-meta li,
+    ul.work-meta li {
+      list-style: none !important;
+      margin: 0.28rem 0;
+      padding: 0 !important;
+      border: 0 !important;
+      text-align: center;
+      line-height: 1.55;
+    }
+
+    .section-block {
+      width: min(920px, 100%);
+      margin: 0 auto 1.5rem;
+      padding: 1.2rem 1.35rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .section-block h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .section-block p {
+      max-width: 72ch;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      line-height: 1.65;
+    }
+
+    .ancillary-gallery.documentation-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: start;
+      margin: 0.85rem auto 0;
+      max-width: 920px;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      display: grid;
+      grid-template-columns: minmax(150px, 230px) 1fr;
+      align-items: center;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      padding: 0.85rem;
+      text-decoration: none;
+      border-right: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      width: 100%;
+      max-width: 210px;
+      max-height: 170px;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
+      display: block;
+      margin: 0;
+      padding: 0.95rem 1.05rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      text-align: left;
+      background: #fff;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption a {
+      display: inline;
+      padding: 0;
+      min-height: 0;
+      border: 0;
+      background: transparent;
+      text-decoration: underline;
+    }
+
+    .card-title {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .card-detail-text {
+      display: block;
+      margin-top: 0.35rem;
+    }
+
+    .card-source {
+      display: block;
+      margin-top: 0.55rem;
+      font-size: 0.86rem;
+      opacity: 0.86;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 820px) {
+      .ancillary-gallery.documentation-grid .ancillary-figure {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure a {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure img {
+        max-width: 260px;
+        max-height: 190px;
+      }
+    }
+  
+    /* BEGIN SCULPTURE FINAL CLEANUP OVERRIDES */
+.site-header,
+    .site-header h1,
+    .top-nav,
+    .year-return-nav {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .work-layout {
+      text-align: center;
+    }
+
+    .work-meta {
+      list-style: none !important;
+      padding: 1.15rem 1.35rem !important;
+      margin: 1.5rem auto 1.7rem !important;
+      max-width: 760px !important;
+      border: 1px solid rgba(0, 0, 0, 0.12) !important;
+      border-radius: 16px !important;
+      background: #fff !important;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+      text-align: center !important;
+    }
+
+    .work-meta li {
+      list-style: none !important;
+      margin: 0.24rem auto !important;
+      padding: 0 !important;
+      border: 0 !important;
+      border-top: 0 !important;
+      border-bottom: 0 !important;
+      text-align: center !important;
+      line-height: 1.45 !important;
+    }
+
+    .section-block,
+    .section-block h2,
+    .section-block > p,
+    .circulation-note {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-block > p {
+      max-width: 84ch;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption,
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption * {
+      text-align: left;
+    }
+/* END SCULPTURE FINAL CLEANUP OVERRIDES */
+      /* BEGIN SCULPTURE FINAL CLEANUP */
+    .site-header {
+      text-align: center;
+    }
+
+    .site-header h1 {
+      text-align: center;
+    }
+
+    .top-nav {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .work-layout {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-card {
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .hero-card .work-hero,
+    .work-hero {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .work-meta {
+      display: block;
+      list-style: none;
+      max-width: 720px;
+      margin: 1.35rem auto 2rem;
+      padding: 1.15rem 1.35rem;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+
+    .work-meta li {
+      display: block;
+      margin: 0.3rem auto;
+      padding: 0;
+      border: 0 !important;
+      text-align: center;
+      line-height: 1.45;
+    }
+
+    .work-meta li::marker {
+      content: "";
+    }
+
+    .section-block {
+      text-align: center;
+    }
+
+    .section-block h2,
+    .section-block h3 {
+      text-align: center;
+    }
+
+    .section-block > p,
+    .circulation-note {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .ancillary-gallery.documentation-grid {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
+      text-align: left;
+    }
+
+    .card-source,
+    .card-detail-text,
+    .card-title {
+      text-align: left;
+    }
+    /* END SCULPTURE FINAL CLEANUP */
+  
+    /* BEGIN THREE SECTION CLEANUP */
+.site-header,
+.site-header h1,
+.top-nav,
+.nav-pills {
+  text-align: center;
+  justify-content: center;
+}
+
+.work-layout {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-meta {
+  list-style: none !important;
+  max-width: 760px;
+  margin: 0 auto 1.5rem !important;
+  padding: 1.15rem 1.4rem !important;
+  text-align: center !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.work-meta li {
+  list-style: none !important;
+  border: 0 !important;
+  border-bottom: 0 !important;
+  padding: 0.18rem 0 !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+.section-block {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-block h2,
+.section-block p {
+  text-align: center;
+}
+
+.ancillary-gallery.documentation-grid .ancillary-figure figcaption,
+.ancillary-gallery.documentation-grid .ancillary-figure figcaption * {
+  text-align: left;
+}
+/* END THREE SECTION CLEANUP */
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Marilyn Mickeys (Green)</h1>
+
+    <nav class="top-nav" aria-label="Site navigation">
+      <a class="nav-home nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <div class="nav-pills">
+        <a class="nav-pill" href="../index.html">Section home</a>
+        <a class="nav-pill" href="../sculptures/index.html">Sculptures</a>
+        <a class="nav-pill" href="../toys/art-toys-and-editions/index.html">Art Toys &amp; Editions</a>
+        <a class="nav-pill" href="../toys/custom-toys/index.html">Custom Toys</a>
+      </div>
+    </nav>
+    <nav class="top-nav year-return-nav">
+      <a class="nav-pill year-return-pill" href="../sculptures/editioned-sculptures/index.html">Return to Editioned Sculptures</a>
+    </nav>
+  </header>
+
+  <main class="work-layout">
+    <figure class="hero-card">
+      <img
+        src="../images/Trampt/marilyn-mickeys-green.jpg"
+        alt="Marilyn Mickeys (Green)"
+        class="work-hero"
+        loading="lazy"
+      />
+    </figure>
+
+    <ul class="work-meta" data-work-id="Manual sculpture record">
+      <li><strong>Title:</strong> Marilyn Mickeys (Green)</li>
+      <li><strong>Date:</strong> 2010</li>
+      <li><strong>Medium:</strong> Painted cast vinyl</li>
+      <li><strong>Dimensions:</strong> 19 &#215; 10 &#215; 9 inches</li>
+      <li><strong>Platform / source:</strong> Marilyn Mickeys</li>
+    </ul>
+<section class="section-block">
+      <h2>Ancillary Documentation</h2>
+
+      <p>
+        The following materials document this sculptural work or its public circulation.
+      </p>
+
+      <div class="ancillary-gallery documentation-grid">
+        <figure class="ancillary-figure">
+          <a
+            href="../images/Web-Documentation/marilyn mickeys-heritage.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../images/Web-Documentation/marilyn mickeys-heritage.jpg"
+              alt="Heritage Auctions documentation for Marilyn Mickeys (Green)"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Heritage Auctions documentation for Marilyn Mickeys (Green)</span>
+            <span class="card-detail-text">Heritage Auctions documentation for Marilyn Mickeys (Green), 2010, painted cast vinyl, 19 &#215; 10 &#215; 9 inches.</span>
+            <span class="card-source">
+              Source page available
+              <a href="https://fineart.ha.com/itm/collectible/contemporary/ron-english-american-b-1959-marilyn-mickeys-green-2010painted-cast-vinyl19-x-10-x-9-inches-483-x-254-x/a/5444-66470.s?lotPosition=23&amp;ic16=ViewItem-BrowseTabs-Auction-Archive-ArchiveSearchResults-012417" target="_blank" rel="noopener noreferrer">here</a>
+              on Heritage Auctions.
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
