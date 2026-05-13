@@ -161,34 +161,82 @@
       color:var(--muted);
       font-size:.92rem;
     }
-  
 
+/* Homepage section-card centering v4 - start */
+/*
+  Center the three landing cards on the Sculptures, Toys & Editions homepage.
+  This targets only the homepage section cards by their link destinations.
+*/
 
-/* Custom Toys homepage card centering v2 - start */
-@media (min-width: 700px) {
-  .custom-toys-home-card-centered {
-    grid-column: 1 / -1 !important;
-    justify-self: center !important;
-    align-self: start !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    max-width: 520px !important;
-    width: min(100%, 520px) !important;
-  }
-
-  .custom-toys-home-card-centered,
-  .custom-toys-home-card-centered * {
-    box-sizing: border-box;
-  }
+main a[href*="sculptures"],
+main a[href*="art-toys-and-editions"],
+main a[href*="custom-toys"] {
+  width: min(100%, 360px) !important;
+  max-width: 360px !important;
+  min-width: 0 !important;
+  justify-self: center !important;
+  align-self: start !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
 }
 
-/* Flex-layout fallback, harmless if the parent is a grid */
-@media (min-width: 700px) {
-  .custom-toys-home-card-centered {
-    flex: 0 1 520px !important;
+/* Override the earlier Custom Toys wide-card rule/inline style. */
+main a[href*="custom-toys"] {
+  grid-column: 1 / -1 !important;
+  justify-self: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: min(100%, 360px) !important;
+  max-width: 360px !important;
+  flex: 0 1 360px !important;
+}
+
+/*
+  Common generated catalogue grid names.
+  The :has() selector limits these rules to the homepage grid that contains
+  the three section cards, instead of affecting every index page.
+*/
+.year-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+.section-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+.category-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+.portal-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+.card-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+.cards-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+.home-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+.landing-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]) {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(280px, 360px)) !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  align-items: start !important;
+  gap: 1.5rem !important;
+  max-width: 820px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* On small screens, stack all cards neatly. */
+@media (max-width: 759px) {
+  .year-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+  .section-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+  .category-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+  .portal-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+  .card-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+  .cards-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+  .home-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+  .landing-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
+  main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]) {
+    grid-template-columns: minmax(260px, 360px) !important;
+    max-width: 420px !important;
+  }
+
+  main a[href*="custom-toys"] {
+    grid-column: auto !important;
   }
 }
-/* Custom Toys homepage card centering v2 - end */
+/* Homepage section-card centering v4 - end */
 </style>
 </head>
 
@@ -207,9 +255,7 @@
       <p>A working catalogue section for documented Ron English sculptural works, art toys, editioned objects, and custom toy-based works.</p>
     </section>
 
-
-
-    <main class="gallery-wrap">
+<main class="gallery-wrap">
       <section class="year-grid" role="list" aria-label="Sculptures, Toys &amp; Editions links grid">
         <a class="year-card searchable-card" href="sculptures/index.html" data-title="Sculptures">
           <img src="images/Trampt/BIGFOOT%20CHILD%20TOURIST%20(NFS)%20-%20Original%20Art%20-%20Trampt%20item%20921.jpg" alt="Sculptures by Ron English" loading="lazy" />
@@ -248,6 +294,5 @@
   </script>
 </body>
 </html>
-
 
 
