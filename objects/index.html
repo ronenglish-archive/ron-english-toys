@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merchandise &amp; Applied Objects | Ron English Catalogue Raisonne</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    :root{
+      --muted:#4b5563;
+      --border:rgba(0,0,0,0.12);
+      --shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:#fff;
+    }
+
+    .page-container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+      box-sizing:border-box;
+    }
+
+    .top-nav{
+      margin-top:22px;
+      margin-bottom:22px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0;
+      padding:0;
+      text-align:center;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+      text-align:center;
+    }
+
+    .intro-text{
+      max-width:900px;
+      margin:0 auto 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:none;
+      width:100%;
+      color:var(--muted);
+      font-size:18px;
+      text-align:center;
+    }
+
+    .section-hero{
+      max-width:760px;
+      margin:28px auto 30px;
+      border:1px solid var(--border);
+      border-radius:18px;
+      overflow:hidden;
+      background:#f3f4f6;
+      box-shadow:var(--shadow);
+    }
+
+    .section-hero img{
+      display:block;
+      width:100%;
+      max-height:520px;
+      object-fit:contain;
+      background:#f3f4f6;
+      padding:12px;
+    }
+
+    .object-type-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:18px;
+      max-width:900px;
+      margin:24px auto 0;
+    }
+
+    .object-type-card{
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:#fff;
+      box-shadow:var(--shadow);
+      padding:18px;
+      text-align:center;
+    }
+
+    .object-type-card h2{
+      margin:0 0 8px;
+      font-size:1.05rem;
+      line-height:1.2;
+    }
+
+    .object-type-card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.5;
+      font-size:.96rem;
+    }
+
+    .site-footer{
+      margin-top:42px;
+      text-align:center;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+  </style>
+</head>
+
+<body class="decade-overview-page">
+  <div class="page-container">
+
+    <nav class="top-nav" aria-label="Site navigation">
+      <a class="nav-home nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <div class="nav-pills">
+        <a class="nav-pill" href="../index.html">Section home</a>
+        <a class="nav-pill" href="../sculptures/index.html">Sculptures</a>
+        <a class="nav-pill" href="../toys/art-toys-and-editions/index.html">Art Toys &amp; Editions</a>
+        <a class="nav-pill" href="../toys/custom-toys/index.html">Custom Toys</a>
+        <a class="nav-pill is-active" href="../objects/index.html">Merchandise &amp; Applied Objects</a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Merchandise &amp; Applied Objects</h1>
+    </header>
+
+    <section class="intro-text" aria-label="Merchandise and applied objects overview">
+      <p>A working index for produced objects that carry Ron English imagery or design but do not fit cleanly as sculptures, art toys, or custom toy-based works.</p>
+    </section>
+
+    <section class="section-hero" aria-label="Featured merchandise and applied object">
+      <img src="../images/Web-Documentation/Shocking%20Sunflower%20Grin%20Pink%20Lace%20Pin.jpg" alt="Shocking Sunflower Grin Pink Lace Pin" loading="lazy" />
+    </section>
+
+    <main class="gallery-wrap">
+      <section class="object-type-grid" aria-label="Merchandise and applied objects categories">
+        <article class="object-type-card">
+          <h2>Pins &amp; Accessories</h2>
+          <p>Small produced objects such as enamel pins, keychains, patches, and related accessories.</p>
+        </article>
+
+        <article class="object-type-card">
+          <h2>Skateboard Decks</h2>
+          <p>Non-unique produced decks featuring Ron English artwork or design.</p>
+        </article>
+
+        <article class="object-type-card">
+          <h2>Cups, Plates &amp; Tableware</h2>
+          <p>Applied objects and tableware that reproduce or adapt Ron English imagery.</p>
+        </article>
+
+        <article class="object-type-card">
+          <h2>Other Merchandise</h2>
+          <p>Additional produced merchandise and applied objects to be added as documentation is organized.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Ron English Catalogue Raisonne - Merchandise &amp; Applied Objects</p>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sculptures, Toys &amp; Editions | Ron English Catalogue Raisonne</title>
+  <title>Sculptures, Toys &amp; Applied Objects | Ron English Catalogue Raisonne</title>
   <link rel="stylesheet" href="css/styles.css" />
 
   <style>
@@ -162,15 +162,16 @@
       font-size:.92rem;
     }
 
-/* Homepage section-card centering v4 - start */
+/* Homepage section-card centering v5 - start */
 /*
-  Center the three landing cards on the Sculptures, Toys & Editions homepage.
+  Center the four landing cards on the Sculptures, Toys & Applied Objects homepage.
   This targets only the homepage section cards by their link destinations.
 */
 
 main a[href*="sculptures"],
 main a[href*="art-toys-and-editions"],
-main a[href*="custom-toys"] {
+main a[href*="custom-toys"],
+main a[href*="objects"] {
   width: min(100%, 360px) !important;
   max-width: 360px !important;
   min-width: 0 !important;
@@ -181,12 +182,12 @@ main a[href*="custom-toys"] {
   box-sizing: border-box !important;
 }
 
-/* Override the earlier Custom Toys wide-card rule/inline style. */
+/* Custom Toys used to be a centered wide card when there were only three cards. */
 main a[href*="custom-toys"] {
-  grid-column: 1 / -1 !important;
+  grid-column: auto !important;
   justify-self: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   width: min(100%, 360px) !important;
   max-width: 360px !important;
   flex: 0 1 360px !important;
@@ -195,17 +196,17 @@ main a[href*="custom-toys"] {
 /*
   Common generated catalogue grid names.
   The :has() selector limits these rules to the homepage grid that contains
-  the three section cards, instead of affecting every index page.
+  the four section cards, instead of affecting every index page.
 */
-.year-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-.section-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-.category-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-.portal-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-.card-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-.cards-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-.home-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-.landing-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]) {
+.year-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+.section-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+.category-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+.portal-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+.card-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+.cards-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+.home-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+.landing-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]) {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(280px, 360px)) !important;
   justify-content: center !important;
@@ -219,24 +220,20 @@ main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):ha
 
 /* On small screens, stack all cards neatly. */
 @media (max-width: 759px) {
-  .year-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-  .section-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-  .category-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-  .portal-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-  .card-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-  .cards-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-  .home-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-  .landing-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]),
-  main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]) {
+  .year-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+  .section-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+  .category-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+  .portal-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+  .card-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+  .cards-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+  .home-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+  .landing-grid:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]),
+  main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):has(a[href*="custom-toys"]):has(a[href*="objects"]) {
     grid-template-columns: minmax(260px, 360px) !important;
     max-width: 420px !important;
   }
-
-  main a[href*="custom-toys"] {
-    grid-column: auto !important;
-  }
 }
-/* Homepage section-card centering v4 - end */
+/* Homepage section-card centering v5 - end */
 </style>
 </head>
 
@@ -248,15 +245,15 @@ main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):ha
     </nav>
 
     <header class="page-header">
-      <h1 class="page-title">Sculptures, Toys &amp; Editions</h1>
+      <h1 class="page-title">Sculptures, Toys &amp; Applied Objects</h1>
     </header>
 
-    <section class="intro-text" aria-label="Sculptures, Toys &amp; Editions overview">
-      <p>A working catalogue section for documented Ron English sculptural works, art toys, editioned objects, and custom toy-based works.</p>
+    <section class="intro-text" aria-label="Sculptures, Toys &amp; Applied Objects overview">
+      <p>A working catalogue section for documented Ron English sculptural works, art toys, toy editions, custom toy-based works, merchandise, and applied objects.</p>
     </section>
 
 <main class="gallery-wrap">
-      <section class="year-grid" role="list" aria-label="Sculptures, Toys &amp; Editions links grid">
+      <section class="year-grid" role="list" aria-label="Sculptures, Toys &amp; Applied Objects links grid">
         <a class="year-card searchable-card" href="sculptures/index.html" data-title="Sculptures">
           <img src="images/Vinyl-Toys/BIGFOOT%20CHILD%20TOURIST%20(NFS)%20-%20Original%20Art%20-%20Trampt%20item%20921.jpg" alt="Sculptures by Ron English" loading="lazy" />
           <div class="year-card-body"><h2 class="year-card-title">Sculptures</h2></div>
@@ -269,11 +266,15 @@ main section:has(a[href*="sculptures"]):has(a[href*="art-toys-and-editions"]):ha
           <img src="images/Vinyl-Toys/D&#39;oh!%20Boy%20-%20Traditional%20-%20Custom%20Toy%20-%20Trampt%20item%20868.jpg" alt="Custom Toys by Ron English" loading="lazy" />
           <div class="year-card-body"><h2 class="year-card-title">Custom Toys</h2></div>
         </a>
+        <a class="year-card searchable-card" href="objects/index.html" data-title="Merchandise &amp; Applied Objects">
+          <img src="images/Web-Documentation/Shocking%20Sunflower%20Grin%20Pink%20Lace%20Pin.jpg" alt="Merchandise &amp; Applied Objects by Ron English" loading="lazy" />
+          <div class="year-card-body"><h2 class="year-card-title">Merchandise &amp; Applied Objects</h2></div>
+        </a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Ron English Catalogue Raisonne - Sculptures, Toys &amp; Editions</p>
+      <p>Ron English Catalogue Raisonne - Sculptures, Toys &amp; Applied Objects</p>
     </footer>
 
   </div>
